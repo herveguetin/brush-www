@@ -11,7 +11,9 @@
   },
   "dependencies": {
     "@astrojs/starlight": "^0.36.1",
+    "@fontsource/varela-round": "^5.2.8",
     "astro": "^5.6.1",
-    "sharp": "^0.34.2"
+    "sharp": "^0.34.2",
+    "starlight-theme-rapide": "^0.5.2"
   }
 }
