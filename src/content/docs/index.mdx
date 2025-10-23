@@ -13,15 +13,15 @@ hero:
       icon: right-arrow
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
+import { Card, CardGrid, Icon, LinkButton } from '@astrojs/starlight/components';
 
 ### What is brush?
 
-<div class="p-large">Brush is a starter kit for building Shopify custom apps. Based on gadget.dev for the backend and a ViteJS app using AlpineJS for the frontend.</div>
+<div class="p-large">Brush is a starter kit for building Shopify custom apps. Based on gadget.dev for the backend and a ViteJS app embedding AlpineJS for the frontend.</div>
 
 <CardGrid>
 	<Card title="For your gadget.dev app" icon="seti:db">
-		Get valuable enhancements that help build a powerful backend to add custom features to your Shopify store.
+		Get valuable enhancements that help build a powerful backend to add custom features to your Shopify shop.
 	</Card>
 	<Card title="For your Shopify theme" icon="seti:liquid">
 		Include a bundled and optimized JS app in your Shopify theme using the lightweight AlpineJS frontend framework for modern development and reactivity.
@@ -45,7 +45,7 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
 		Synchronized cross-browser-tabs stateful context based on AlpineJS stores and persist plugin.
 	</Card>
 	<Card title="Fetch wrapper" icon="cloud-download">
-		Optimized frontend fetcher to cope with Shopify's App Proxy's authenticated requests and ensuring store's market consistency.
+		Optimized frontend fetcher to cope with Shopify App Proxy's authenticated requests and ensuring shop's market consistency.
 	</Card>
 	<Card title="i18n" icon="translate">
 		A single source of thuth: Shopify's theme JSON translation files are converted to i18Next dictionnaries available in the frontend and backend.
@@ -73,7 +73,7 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
 <div class="p-large">More-or-less soon to come</div>
 
 <CardGrid>
-	<Card title="Persistant configuration">
+	<Card title="Persistent configuration">
 		Storing custom shop-based configurations in gadget.dev's DB.
 	</Card>
 	<Card title="Slugifier">
@@ -83,8 +83,17 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
 		Adding the Shopify's Customer graphQL API to the backend app.
 	</Card>
 	<Card title="ID ↔ GID converted">
-		A quick tool to easily switch from numbered ID to Shopify's GIDs. And vice-versa.
+		A quick tool to easily switch from numbered ID to Shopify resources GIDs. And vice-versa.
 	</Card>
 </CardGrid>
 
-<div class="brush-footer"></div>
+<div class="brush-footer">
+	<div class="footer-content">
+		<div class="footer-left">Made among trees on the French countryside by Hervé Guétin.</div>
+		<div class="footer-right">
+			<LinkButton href="https://www.linkedin.com/in/herveguetin/" target="_blank">
+				<Icon name="linkedin" label="Get in touch on LinkedIn" size="1.5rem" />
+			</LinkButton>
+		</div>
+	</div>
+</div>
