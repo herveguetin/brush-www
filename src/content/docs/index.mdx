@@ -3,7 +3,7 @@ title: Welcome to Brush
 description: Get started building your Shopify custom app with Brush.
 template: splash # Remove or comment out this line to display the site sidebar on this page.
 hero:
-  tagline: A full-stack Shopify starter kit.
+  tagline: A full-stack Shopify custom app starter kit.
   image:
     light: ../../assets/hero.svg
     dark: ../../assets/hero_dark.svg
@@ -15,23 +15,76 @@ hero:
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
 
-## Next steps
+### What is brush?
 
-<CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
+<div class="p-large">Brush is a starter kit for building Shopify custom apps. Based on gadget.dev for the backend and a ViteJS app using AlpineJS for the frontend.</div>
+
+<CardGrid>
+	<Card title="For your gadget.dev app" icon="seti:db">
+		Get valuable enhancements that help build a powerful backend to add custom features to your Shopify store.
 	</Card>
-	<Card title="Change page layout" icon="document">
-		Delete `template: splash` in `src/content/docs/index.mdx` to display a
-		sidebar on this page.
+	<Card title="For your Shopify theme" icon="seti:liquid">
+		Include a bundled and optimized JS app in your Shopify theme using the lightweight AlpineJS frontend framework for modern development and reactivity.
 	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
-	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
-	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
+	<Card title="Seamless communication" icon="comment">
+		Easily make authenticated RESTful API calls from your Shopify theme to your gadget.dev backend while ensuring proper localization.
 	</Card>
 </CardGrid>
+
+
+<div class="separator"></div>
+### (almost) Everything you need
+
+<div class="p-large">A set of must-have features</div>
+
+<CardGrid>
+	<Card title="Full Typescript" icon="seti:typescript">
+		Both the frontend and backend apps leverage Typescript for modern and bugless development.
+	</Card>
+	<Card title="Frontend stateful context" icon="seti:folder">
+		Synchronized cross-browser-tabs stateful context based on AlpineJS stores and persist plugin.
+	</Card>
+	<Card title="Fetch wrapper" icon="cloud-download">
+		Optimized frontend fetcher to cope with Shopify's App Proxy's authenticated requests and ensuring store's market consistency.
+	</Card>
+	<Card title="i18n" icon="translate">
+		A single source of thuth: Shopify's theme JSON translation files are converted to i18Next dictionnaries available in the frontend and backend.
+	</Card>
+	<Card title="Browser cache management" icon="approve-check-circle">
+		Ensuring up-to-date frontend app thanks to automatic update based on Shopify's assets versioning.
+	</Card>
+	<Card title="Precognitive forms" icon="list-format">
+		A powerful frontend form validator requesting server-side validation using Zod. A single submission process to validate and submit forms.
+	</Card>
+	<Card title="Quality of life" icon="heart">
+		Handling referrers, custom Shopify post login redirection, price formatting, ...
+	</Card>
+	<Card title="Admin and Storefront APIs" icon="seti:notebook">
+		Out-of-the-box Admin and Storefront Shopify GraphQL APIs clients that are ready to use.
+	</Card>
+	<Card title="RESTful API" icon="rss">
+		Using gadget.dev's routes so that the frontend app can make secured requests to the backend.
+	</Card>
+</CardGrid>
+
+<div class="separator"></div>
+### Roadmap
+
+<div class="p-large">More-or-less soon to come</div>
+
+<CardGrid>
+	<Card title="Persistant configuration">
+		Storing custom shop-based configurations in gadget.dev's DB.
+	</Card>
+	<Card title="Slugifier">
+		Always useful to be able to convert text to a standardized slug-like format.
+	</Card>
+	<Card title="Customer API">
+		Adding the Shopify's Customer graphQL API to the backend app.
+	</Card>
+	<Card title="ID ↔ GID converted">
+		A quick tool to easily switch from numbered ID to Shopify's GIDs. And vice-versa.
+	</Card>
+</CardGrid>
+
+<div class="brush-footer"></div>
