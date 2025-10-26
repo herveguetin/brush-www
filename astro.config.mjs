@@ -15,13 +15,14 @@ export default defineConfig({
         dark: "./src/assets/brush_logo_dark.svg",
         replacesTitle: true,
       },
-      social: [{ icon: "github", label: "GitHub", href: "https://github.com/withastro/starlight" }],
       sidebar: [
         {
-          label: "Guides",
+          label: "Get started",
           items: [
             // Each item here is one entry in the navigation menu.
-            { label: "Example Guide", slug: "guides/example" },
+            { label: "Gadget app", slug: "get-started/gadget-app" },
+            { label: "Shopify theme", slug: "get-started/shopify-theme" },
+            { label: "Deploy to production", slug: "get-started/deploy-prod" },
           ],
         },
         {
