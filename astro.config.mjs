@@ -8,7 +8,7 @@ export default defineConfig({
   integrations: [
     starlight({
       plugins: [starlightThemeRapide()],
-      title: "My Docs",
+      title: "Brush",
       customCss: ["./src/styles/custom.css", "@fontsource/varela-round"],
       logo: {
         light: "./src/assets/brush_logo.svg",
