@@ -74,6 +74,7 @@ The "API scopes" section in the right column must look like that:
 - Reach out to the "Settings" page of your Shopify app and copy both "Client ID" and "Secret".
 - Back to your Gadget app admin, paste the Client ID into "Client ID" and the Secret into "Client secret".
 - Save the Gadget configuration and close the modal that appears.
+- Still from the "Settings" page of your Gadget app (you should alrady be browsing it, otherwise click on the Settings with a gear icon at the bottom left), choose "Environnement variables" and add a new entry with the Key `SHOPIFY_APP_CLIENT_SECRET` and paste the "Secret" you got from your Shopify app "Settings" page earlier.
 
 ## Install your app on a Shopify store
 
