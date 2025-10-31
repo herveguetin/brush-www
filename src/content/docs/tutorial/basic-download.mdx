@@ -1,0 +1,21 @@
+---
+title: Creating layout and contributing the products
+description: Adding products to the download list and displaying them
+---
+import { Badge } from '@astrojs/starlight/components';
+
+We need to add the actual action on the "Download" button for each product.
+Clicking on the button triggers an API GET request to the Gadget backend, which, for now, only returns a message with the requested product ID.
+
+## Frontend code update
+<Badge text='See commit "Download basics"' variant="tip" />
+
+- Update the button of the grid product item in order to trigger the `downloadProductPdf` method of the Alpine component.
+- The `downloadProductPdf` method calls the App Proxy base URL `/apps/brush` followed by the API endpoint `product-download` and the product ID as a parameter.
+- For now, handling the response is just a matter of simple logging.
+
+## Backend code update
+<Badge text='See commit "Download GET route"' variant="note" />
+
+- Create a GET route accepting the `id` request parameter.
+- Send a very simple response to validate we properly get the product id from the frontend request.

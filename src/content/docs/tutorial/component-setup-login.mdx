@@ -1,0 +1,19 @@
+---
+title: Alpine component init and handling login
+description: Setup Alpine component and customer login
+---
+import { Badge } from '@astrojs/starlight/components';
+
+As we want to allow only logged in customers to download our products PDF, we need to request login and make sure that the user is redirected back to our "Products downloads" page.
+
+## Frontend code update
+<Badge text='See commit "Component setup & login"' variant="tip" />
+
+- Create a new `ProductsDownloads` AlpineJS component.
+- Declare this component in `brush/src/components/index.ts`.
+- Update the Shopify page template and introduce a new `products-downloads.liquid` section.
+- Attach the Alpine component in the section with `x-data="ProductsDownloads()"`
+- Use liquid `customer` object to check if customer is logged in.
+- If not, display a button that triggers the `login` method from the component.
+- This `login` method uses the `Brush.Referrals.makeLoginRedirectUrl()` helper to handle redirection to login and landing back on the current page.
+- Also make sure to update JSON translation files.

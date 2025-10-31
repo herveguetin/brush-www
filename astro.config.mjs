@@ -20,9 +20,20 @@ export default defineConfig({
           label: "Get started",
           items: [
             // Each item here is one entry in the navigation menu.
-            { label: "Gadget app", slug: "get-started/gadget-app" },
-            { label: "Shopify theme", slug: "get-started/shopify-theme" },
+            { label: "Install Gadget app", slug: "get-started/gadget-app" },
+            { label: "Install Shopify theme", slug: "get-started/shopify-theme" },
             { label: "Deploy to production", slug: "get-started/deploy-prod" },
+          ],
+        },
+        {
+          label: "Tutorial",
+          items: [
+            // Each item here is one entry in the navigation menu.
+            { label: "Market setup", slug: "tutorial/market-setup" },
+            { label: "Page setup", slug: "tutorial/page-setup" },
+            { label: "Component setup & login", slug: "tutorial/component-setup-login" },
+            { label: "Products grid layout", slug: "tutorial/products-grid-layout" },
+            { label: "Basic backend fetch", slug: "tutorial/basic-download" },
           ],
         },
         {
