@@ -1,0 +1,15 @@
+---
+title: Getting actual localized product data
+description: Using the Storefront API to retrieve market and language scoped product data
+---
+import { Badge } from '@astrojs/starlight/components';
+
+Let's use the Shopify Storefront API to retrieve market and language scoped product data.
+
+## Backend code update
+<Badge text='See commit "Product data with Storefront API"' variant="note" />
+
+- Create an `/app` directory which contains our business logic.
+- Add a `product-download.ts` file that that uses Brush-provided Storefront API client to make a GraphQL query.
+- Store this query in a separate file to keep code clean and make sure to implement the `@inContext` to get localized data.  
+- Update `tsconfig` files to ensure proper TypeScript linting.

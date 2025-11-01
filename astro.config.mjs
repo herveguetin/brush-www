@@ -34,6 +34,7 @@ export default defineConfig({
             { label: "Component setup & login", slug: "tutorial/component-setup-login" },
             { label: "Products grid layout", slug: "tutorial/products-grid-layout" },
             { label: "Basic backend fetch", slug: "tutorial/basic-download" },
+            { label: "Storefront product data", slug: "tutorial/storefront-product" },
           ],
         },
         {
